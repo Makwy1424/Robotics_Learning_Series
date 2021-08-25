@@ -10,7 +10,7 @@ print("||//             \\||  ||======== ||======= ||======== ||=========||  || 
 
 def randomIn():
     n = random.randint(1000, 10000)
-    print("Number is %d" % n)
+
     return n
 
 
