@@ -9,7 +9,8 @@ print("||//             \\||  ||======== ||======= ||======== ||=========||  || 
 
 
 def randomIn():
-    n = random.randint(1000, 10000)
+    # n = random.randint(1000, 10000)
+    n = 1234
 
     return n
 
@@ -36,12 +37,12 @@ def Int_to_list(a):
     return digit_list
 
 
-def common_digit_list(a, b):
-    a_set = set(a)
-    intersection = a_set.intersection(b)
+# 4(Find the digits common between two lists)
+def common_digit_list(lst1, lst2):
 
-    intersection_list = list(intersection)
-    return intersection_list
+    temp = set(lst2)
+    lst3 = [value for value in lst1 if value in temp]
+    return lst3
 
 
 def correct_matches(a, b):
@@ -86,13 +87,14 @@ def working(Turns, num, lst_rand, score):
             score += 5
             print("\nAll digits are in the correct places.")
             print("You have won the game!!\n\n")
-            print("Score = ", score)
+            print("Your score is: ", score)
             print("-------------------------------------------------------------")
 
             break
         else:
             score -= 2
             printOut(lst_rand, lst_user)
+            print("Your score is: ", score)
             if(Turns != 0):
                 print("\nTurns remaining- ", Turns)
             else:
