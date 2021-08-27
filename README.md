@@ -1,4 +1,4 @@
-# Robotics_Learning_Series
+# Robotics_Learning_Series(python_task_1.py is according to the rule)
 
 ## Rules of the game (2 Player Version):
                                       
